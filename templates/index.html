@@ -7,8 +7,8 @@
 <body>
     <h1> {{ title }}</h1>
     <ul>{%for model in models%}
-        <li>{{model}}</li>
-        {%endfor%}
+        <li>{{model.name}}:{{model.created_at|date:"Y-m-d H:i:s"}}</li>
+        {% endfor %}
     </ul>
 </body>
 </html>
